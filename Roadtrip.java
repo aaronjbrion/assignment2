@@ -218,12 +218,12 @@ public class Roadtrip extends Graph{
 
         
         Scanner scanner= new Scanner(System.in);
-        System.out.println("Choose a starting point");
+        System.out.println("Starting City, State");
         String startingCity= scanner.nextLine();
-        System.out.println("Choose an end point");
+        System.out.println("Ending City, State");
         String endingCity= scanner.nextLine();
         List<String> newAttraction = new ArrayList<>();
-        System.out.println("Add an Attraction");
+        System.out.println("Add an Attraction/Stop");
         String firstAttraction= scanner.nextLine();
         newAttraction.add(firstAttraction);
         System.out.println("Want to add another? Enter 'Y' for yes, other for no");
