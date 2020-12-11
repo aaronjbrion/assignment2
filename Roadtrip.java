@@ -215,8 +215,6 @@ public class Roadtrip extends Graph{
         String attractions = "attractions.csv";
         trip.findRoad(roads);
         trip.findAttraction(attractions);
-
-        
         Scanner scanner= new Scanner(System.in);
         System.out.println("Starting City, State");
         String startingCity= scanner.nextLine();
@@ -226,15 +224,14 @@ public class Roadtrip extends Graph{
         System.out.println("Add an Attraction/Stop");
         String firstAttraction= scanner.nextLine();
         newAttraction.add(firstAttraction);
-        System.out.println("Want to add another? Enter 'Y' for yes, other for no");
+        System.out.println("Add another stop? Type Y for yes, other for no");
         String question = scanner.nextLine();
-
         if(question.equals("Y") || question.equals("y")){
             while(question.equals("Y") || question.equals("y")){
                 System.out.println("Add attraction");
                 firstAttraction= scanner.nextLine();
                 newAttraction.add(firstAttraction);
-                System.out.println("Add another attracion? Enter Y for yes, N for no");
+                System.out.println("Add another stop? Type Y for yes, other for no");
                 question= scanner.nextLine();
             }
         }
