@@ -67,9 +67,7 @@ public class Roadtrip extends Graph{
     List<String> findRoute(String startingCity, String endingCity, List<String> attractionList){
         ArrayList<String> gps = new ArrayList<>();
         Hashtable<String, List<String>> adjacencyList= graph.get();
-
         graph.addEdge(startingCity, startingCity, 0, 0);
-
         for(String city : cityName){
             if(city != null){
                 visited.put(city, false);
@@ -153,7 +151,6 @@ public class Roadtrip extends Graph{
                 }
             }
         }
-
         return gps;
     }
 
